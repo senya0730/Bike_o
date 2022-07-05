@@ -1,0 +1,29 @@
+.top_menu{
+    float:left;
+    /* background-color: darkgray; */
+    height:100px;
+    width:100%;
+    margin:30;
+
+}
+.top{
+    float: left;
+    text-align: center;
+    height:30px;
+    width:150px;
+    margin-top:30;
+    margin-bottom:30;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #666;
+}
+.top:hover{
+    color: skyblue;
+    background-color: darkolivegreen
+}
+.scheduler{
+    width:1000px;
+    height:100%;
+    padding-top:100px;
+    padding-left:100px;
+}

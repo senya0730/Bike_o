@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>バイク王_社内システム</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lib/main.css" >
+        <script src="lib/main.js"></script>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+              var calendarEl = document.getElementById('calendar');
+          
+              var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialDate: '2022-07-01',
+                initialView: 'dayGridMonth',
+                businessHours:true,
+                locale: 'ja',
+                headerToolbar: {
+                  left: 'prev,next today',
+                  center: 'title',
+                //   right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                  right: 'dayGridMonth,listWeek'
+                },
+                height: 'auto',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                selectable: true,
+                selectMirror: true,
+                nowIndicator: true,
+                events: [
+                  {
+                    title: 'マフラー到着',
+                    start: '2022-07-13'
+                  },
+                  {
+                    title: 'タイヤ発注',
+                    url: 'http://google.com/',
+                    start: '2022-07-07'
+                  },
+                  {
+                    title: '店改装',
+                    start: '2022-07-01',
+                    end: '2022-07-06',
+                    color:'red'
+                  }
+                ]
+              });
+          
+              calendar.render();
+            });
+          
+          </script>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="images/bike_o_logo.png" width="200" height="100%">
+        </div>
+        <div class="top_menu">
+            <button class="top" onclick="location.href='subpage/top1.html'">Top</button>
+            <button class="top" onclick="location.href='subpage/top2.html'">見積</button>
+            <button class="top" onclick="location.href='subpage/top3.html'">発注</button>
+            <button class="top" onclick="location.href='subpage/top4.html'">業者管理</button>
+            <button class="top" onclick="location.href='subpage/top5.html'">在庫管理</button>
+            <button class="top" onclick="location.href='subpage/top6.html'">経理連携</button>
+            <button class="top" onclick="location.href='subpage/top7.html'">契約連携</button>
+            <button class="top" onclick="location.href='subpage/top8.html'">B-pro連携</button>
+        </div>
+        <div class="scheduler">
+            <div id="calendar"></div>
+        </div>
+    </body>
+</html>
