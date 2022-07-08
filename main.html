@@ -2,10 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
         <title>バイク王_社内システム</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="lib/main.css" >
+        <link rel="stylesheet" href="css/test.css" >
         <script src="lib/main.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
 
             document.addEventListener('DOMContentLoaded', function() {
@@ -39,9 +43,10 @@
                     start: '2022-07-07'
                   },
                   {
-                    title: '店改装',
-                    start: '2022-07-01',
-                    end: '2022-07-06',
+                    title: 'Zoom会議',
+                    start: '2022-07-21',
+                    end: '2022-07-23',
+                    url: 'https://explore.zoom.us/ja/products/meetings/',
                     color:'red'
                   }
                 ]
@@ -53,21 +58,32 @@
           </script>
     </head>
     <body>
-        <div class="logo">
-            <img src="images/bike_o_logo.png" width="200" height="100%">
+
+      <header>
+        <div class="header-left">
+            <img class="logo" src="img/logo.png">
         </div>
-        <div class="top_menu">
-            <button class="top" onclick="location.href='subpage/top1.html'">Top</button>
-            <button class="top" onclick="location.href='subpage/top2.html'">見積</button>
-            <button class="top" onclick="location.href='subpage/top3.html'">発注</button>
-            <button class="top" onclick="location.href='subpage/top4.html'">業者管理</button>
-            <button class="top" onclick="location.href='subpage/top5.html'">在庫管理</button>
-            <button class="top" onclick="location.href='subpage/top6.html'">経理連携</button>
-            <button class="top" onclick="location.href='subpage/top7.html'">契約連携</button>
-            <button class="top" onclick="location.href='subpage/top8.html'">B-pro連携</button>
-        </div>
-        <div class="scheduler">
-            <div id="calendar"></div>
-        </div>
+        <div class="header-right">
+            <a href="admin_login.html" class="login">ログアウト</a>
+        </div> 
+      </header>
+      <div class="top-body">
+          <button class="body-btn" onclick="location.href='main.html'">トップ</button>
+          <button class="body-btn" onclick="location.href='subpage/estimate.html'">見積</button>
+          <button class="body-btn" onclick="location.href='subpage/order.html'">発注</button>
+          <button class="body-btn">業者管理</button>
+          <button class="body-btn">在庫管理</button><br>
+          <button class="body-btn">経理連携</button>
+          <button class="body-btn">契約連携</button>
+          <button class="body-btn">B-Pro連携</button>
+      </div>
+
+      
+      <div class="scheduler">
+          <div id="calendar"></div>
+      </div>
     </body>
+    <footer>
+      
+    </footer>
 </html>

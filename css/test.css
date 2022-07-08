@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    /* width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; */
+  }
+ 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+  
+a {
+    text-decoration: none;
+}
+
+
+
+.logo{
+    width: 124px;
+    margin-top: 20px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    background-color: white;
+}
+
+.header-right:hover {
+    background-color: white;
+}
+
+.header-right a{
+    line-height:65px;
+    padding-right:25px;
+    padding-left:25px;
+    color:black;
+    
+    display:block;
+    transition:all 0.5s; 
+}
+
+.top-body{
+    text-align:center;
+    padding-top: 5%;
+}
+
+
+.main{
+    flex: 1;
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.main-title{
+    font-size: 30px;
+}
+
+.main-btn{
+    font-size: 20px;
+}
+
+.scheduler{
+    width:80%;
+    height:100%;
+    padding-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 960px) { 
+    .body-btn{
+        color:black;
+        font-size:2rem;
+    
+        width: 15rem;
+        height:3rem;
+        margin: 1rem 0; 
+    }
+    
+    
+@media screen and (max-width: 959px) { 
+    
+
+    .body-btn{
+        color:black;
+        font-size:2rem;
+    
+        width: 15rem;
+        height:3rem;
+        margin: 1rem 0; 
+    }
+    }
+
+}
